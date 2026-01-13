@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>kittu</title>
+  <title>Kittu 💗</title>
+
   <style>
     body {
       margin: 0;
@@ -81,16 +82,38 @@
       background-color: #ccc;
       color: #555;
     }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+      transition: transform 0.3s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
   </style>
 </head>
+
 <body>
 
   <!-- Section 1 -->
   <section id="intro">
     <div class="heart">💗</div>
-    <h1>Hiiiiiiiiiiii kanmaniiiii </h1>
-    <p>I made this small sa gift for youuu as a token of love    because you mean more to me than words can ever explain.</p>
-    <button onclick="nextSection('months')">AAGE BADHOOOOOO </button>
+    <h1>Hiiiiiiiiiiii kanmaniiiii 💕</h1>
+    <p>
+      I made this small sa gift for youuu as a token of love because you mean more to me
+      than words can ever explain.
+    </p>
+    <button onclick="nextSection('months')">AAGE BADHOOOOOO 💕</button>
   </section>
 
   <!-- Section 2 -->
@@ -98,10 +121,11 @@
     <div class="card">
       <h2>Happy 5 Months Anniversary 💗🫶🏻</h2>
       <p>
-        Five months of laughs, love, fights, care, memories, and countless moments that made my heart feel at home.
-        Every single day with you feels special, and I’m so grateful to have you.Being with youu has always been best best and best i loveeee youuuuu my kanna may we should be forever and everr no nazar to uss pleasee stay withh me always ane lovee me even when i say right ko left time really fliess, withhh youu i feel completed i loveee youuuuu my babyyyyy letss stay together forever andd everrr mwahhhh
+        Five months of laughs, love, fights, care, memories, and countless moments
+        that made my heart feel at home. Every single day with you feels special,
+        and I’m so grateful to have you. I loveeee youuuuu my kanna 💕
       </p>
-      <button onclick="nextSection('memories')">NEXTTT 🤪 </button>
+      <button onclick="nextSection('memories')">NEXTTT 🤪</button>
     </div>
   </section>
 
@@ -109,32 +133,40 @@
   <section id="memories" class="hidden">
     <div class="card">
       <h2>Memories 📸</h2>
-      <p>From a random conversation till forever.....🥹🥹</p>
-      <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap:15px; margin-top:20px;">
-        <img src="C:\Users\sweta\OneDrive\Desktop\rahu;l\photo3.jpeg" alt="Memory 1" style="width:100%; border-radius:15px;">
-        <img src="C:\Users\sweta\OneDrive\Desktop\rahu;l\photo2.jpeg" alt="Memory 2" style="width:100%; border-radius:15px;">
-        <img src="C:\Users\sweta\OneDrive\Desktop\rahu;l\photo1.jpeg" alt="Memory 3" style="width:100%; border-radius:15px;">
+      <p>From a random conversation till forever….. 🥹💗</p>
+
+      <div class="gallery">
+        <img src="photo1.jpeg" alt="Memory 1">
+        <img src="photo2.jpeg" alt="Memory 2">
+        <img src="photo3.jpeg" alt="Memory 3">
       </div>
-      <p style="margin-top:15px;">From smiles to silly moments, every memory with you is my favorite🧿🧿🧿.</p>
-      <button onclick="nextSection('question')">ummmmmmmmmmmmmmmmmmmmm 🤪 </button>
+
+      <p style="margin-top:15px;">
+        From smiles to silly moments, every memory with you is my favorite 🧿🧿🧿
+      </p>
+
+      <button onclick="nextSection('question')">ummmmmmmmmmmmmm 🤪</button>
     </div>
   </section>
 
   <!-- Section 4 -->
   <section id="question" class="hidden">
     <div class="card">
-      <h2>ummmmmmmmmmmmmmmmmmmmm</h2>
-      <p>Will you be my Valentine kittu🥹🥹🥹 ?</p>
-      <button class="yes" onclick="nextSection('yes')">YES🥹🥹</button>
-      <button class="no" onclick="alert('NO KRNE KI HIMMAT')">No😒 </button>
+      <h2>ummmmmmmmmmmmmm 🥹</h2>
+      <p>Will you be my Valentine kittu? 🥹💗</p>
+      <button class="yes" onclick="nextSection('yes')">YES 🥹💖</button>
+      <button class="no" onclick="alert('NO KRNE KI HIMMAT 😒')">No 😒</button>
     </div>
   </section>
 
   <!-- Section 5 -->
   <section id="yes" class="hidden">
     <div class="heart">💞</div>
-    <h1>YAYYY!!!</h1>
-    <p>I LOVEEEE YOUUUUUUUU myy babyyyyy myy cutuuuu myy sweetheart myy kuchupuchu myy loveee myy cupcake myy sugarplumm myy buttercup myy sweetie pie myy loml 🥹💗<br>Happy 5 Months my love 🥹🥹</p>
+    <h1>YAYYY!!! 💖</h1>
+    <p>
+      I LOVEEEE YOUUUUUUUU my babyyyy 🥹💗  
+      Happy 5 Months my love 🥹🥹
+    </p>
   </section>
 
   <script>
